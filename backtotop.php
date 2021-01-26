@@ -9,6 +9,8 @@
 if (!defined('_PS_VERSION_')) {
     exit;
 }
+
+
 class BackToTop extends Module
 {
     public function __construct()
@@ -54,7 +56,6 @@ class BackToTop extends Module
     {
         $this->context->controller->addCSS($this->_path . 'views/css/backtotop.css');
         $this->context->controller->addJS($this->_path . 'views/js/backtotop.js');
-        return true;
     }
 
     /**
@@ -65,4 +66,5 @@ class BackToTop extends Module
     {
         return $this->display(__FILE__, 'views/templates/front/footer.tpl');
     }
+    
 }
